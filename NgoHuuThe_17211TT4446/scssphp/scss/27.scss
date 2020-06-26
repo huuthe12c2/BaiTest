@@ -1,0 +1,98 @@
+$color-b: #000;
+$color-w: #fff;
+$color-r:#fc721e;
+html{
+	background-color: $color-b;
+}
+.type-27{
+	background-color: $color-b;
+	.br-outbest{
+		h2{
+			margin-bottom: 50px;
+			margin-left: -15px;
+			left: 0;
+			span{
+				padding-bottom: 25px;
+				border-bottom: 1px solid $color-r;
+				&::before{
+					content: "";
+					position: absolute;
+					bottom: 15px;
+					border-bottom: 4px solid $color-r;
+					width: 55px;
+					height: 1px;
+				}
+			}
+			
+		}
+		margin-top: 120px;
+		padding: 10px 40px;
+		background-color: #f4f4f4;
+		padding-top: 50px;
+		padding-bottom: 50px;
+		.mr-move {
+			position: relative;
+			
+			a{
+				position: absolute;
+				right:0;
+				color: $color-b;
+				font-weight: bold;
+				margin-top: 15px;
+				border-bottom: 1px solid $color-b;
+			}
+			
+		}
+		.row-bg{
+			padding-right: 5px;
+			background-color: $color-w;
+			padding-bottom: 30px;
+			padding-top: 30px;
+			margin-left: -3px;
+			margin-right: 3px;
+			
+			p{
+				color: #989a9c;
+			}
+			.edit-in{
+				background-color: $color-w;
+				border: none;
+				font-weight: bold;
+				position: absolute;
+				left: 10px;
+			}			
+		}
+		.border-row{
+			border-right: 20px solid #f4f4f4;
+		}
+	}
+}
+
+/* Dành cho máy tính bảng */
+@media all and (max-width: 768px) {
+	.type-27 {
+		.br-outbest{
+			.row-bg{
+				
+				border: 1px solid $color-r;
+				margin-bottom: 10px;
+			 }
+		} 
+	}
+}
+
+/* Dành cho điện thoại */
+@media all and (max-width: 480px) {
+	.type-27 {
+		.br-outbest{
+			.row-bg{
+				margin-bottom: 10px;
+				border: 1px solid $color-r;
+			 }
+		} 
+	}
+ 	
+}
+
+
+
